@@ -1,6 +1,7 @@
 package ui_tests.tests;
 
 import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -32,6 +33,9 @@ public class TestCase_2 {
 
     @Test (priority = 2)
     public void userClickAndHoldTheBlueCircle() {
+        JavascriptExecutor j = (JavascriptExecutor) driver;
+        j.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'})", circle);
+
         action.moveToElement(circle).clickAndHold().moveToElement(squareBlue).build().perform();
     }
 

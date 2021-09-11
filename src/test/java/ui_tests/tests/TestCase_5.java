@@ -12,7 +12,7 @@ import ui_tests.utils.Driver;
 
 import java.util.ArrayList;
 
-public class TestCase5 {
+public class TestCase_5 {
 
     WebDriver driver = Driver.getDriver("chrome");
     SeleniumPractisePageObject homePageObject = SeleniumPractisePageObject.getHomePage(driver);

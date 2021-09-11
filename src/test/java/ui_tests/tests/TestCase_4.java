@@ -1,6 +1,5 @@
 package ui_tests.tests;
 
-import org.apache.commons.lang3.function.FailableDoubleConsumer;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,13 +9,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import ui_tests.pages.DemoSitePageObject;
-import ui_tests.pages.DragDropAreaPageObject2;
 import ui_tests.utils.Driver;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TestCase_4 {
